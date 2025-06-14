@@ -29,6 +29,5 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#FFFFFF",
-  "theme_color": "#0EA5E9",
-  // "scope": "/k3k-shopping/"
+  "theme_color": "#0EA5E9"
 }
