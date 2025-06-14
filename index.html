@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Tracker</title>
+  <link rel="manifest" href="/assets/manifest-C-DRYTAK.json">
+  <meta name="theme-color" content="#0EA5E9"> <!-- Fallback theme color -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      /* Default Theme: Skeleton Light (example) */
+      --color-primary: #0EA5E9; /* blue-500 */
+      --color-primary-foreground: #FFFFFF; /* white */
+      --color-secondary: #EC4899; /* pink-500 */
+      --color-secondary-foreground: #FFFFFF; /* white */
+      --color-accent: #8B5CF6; /* violet-500 */
+      --color-accent-foreground: #FFFFFF; /* white */
+      
+      --color-background: #FFFFFF; /* white */
+      --color-foreground: #1F2937; /* gray-800 */
+      
+      --color-card: #F9FAFB; /* gray-50 */
+      --color-card-foreground: #1F2937; /* gray-800 */
+      
+      --color-muted: #9CA3AF; /* gray-400 */
+      --color-muted-foreground: #4B5563; /* gray-600 */
+      
+      --color-border: #E5E7EB; /* gray-200 */
+
+      /* Legacy for simpler mapping if needed, but prefer specific roles */
+      --color-neutral: var(--color-muted); /* map neutral to muted */
+      --color-base-100: var(--color-background); /* map base_100 to page background */
+      --color-base-content: var(--color-foreground); /* map base_content to page foreground */
+    }
+    /* Removed MUI Autocomplete popper style */
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: 'var(--color-primary)',
+            primary_foreground: 'var(--color-primary-foreground)',
+            secondary: 'var(--color-secondary)',
+            secondary_foreground: 'var(--color-secondary-foreground)',
+            accent: 'var(--color-accent)',
+            accent_foreground: 'var(--color-accent-foreground)',
+            
+            background: 'var(--color-background)',
+            foreground: 'var(--color-foreground)',
+            
+            card: 'var(--color-card)',
+            card_foreground: 'var(--color-card-foreground)',
+            
+            muted: 'var(--color-muted)',
+            muted_foreground: 'var(--color-muted-foreground)',
+            
+            border_color: 'var(--color-border)',
+
+            // For easier migration/compatibility with old names if used directly
+            // It's better to update components to use semantic names like 'card', 'background'
+            base_100: 'var(--color-background)', 
+            base_content: 'var(--color-foreground)',
+            neutral: 'var(--color-muted-foreground)', // map tailwind neutral to our muted_foreground
+          }
+        }
+      }
+    }
+  </script>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/jsx-runtime": "https://esm.sh/react@^19.1.0/jsx-runtime",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+    "recharts": "https://esm.sh/recharts@^2.15.3",
+    "zustand": "https://esm.sh/zustand@^4.5.4",
+    "zustand/middleware": "https://esm.sh/zustand@^4.5.4/middleware",
+    "zustand/": "https://esm.sh/zustand@^5.0.5/",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "idb": "https://esm.sh/idb@8.0.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DKW36hRc.js"></script>
+</head>
+<body class="bg-background text-foreground">
+  <div id="root"></div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          })
+          .catch(err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "Shopping Tracker",
+  "short_name": "ShopTrack",
+  "description": "A mobile-first React application to manage shopping lists, track shopping trips, and view expense reports.",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0EA5E9",
+  "scope": "/"
+}
