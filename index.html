@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopping Tracker</title>
-  <link rel="manifest" href="/manifest.json"> <!-- Fallback theme color -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
+  <!-- IMPORTANT: Replace with your actual Google Client ID -->
+  <meta name="google-signin-client_id" content="637161896468-katiiokhas6pcnikhkb5h6fdl0keckpp.apps.googleusercontent.com">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -80,6 +81,7 @@
 
   gtag('config', 'G-TG9JLJCY7C');
 </script>
+<!-- Google API & Identity Services will be loaded dynamically by useGoogleAuth hook -->
 <script type="importmap">
 {
   "imports": {
@@ -93,11 +95,12 @@
     "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
     "react/": "https://esm.sh/react@^19.1.0/",
     "idb": "https://esm.sh/idb@8.0.0",
-    "react-hot-toast": "https://esm.sh/react-hot-toast@2.4.1"
+    "react-hot-toast": "https://esm.sh/react-hot-toast@2.4.1",
+    "gapi-script": "https://esm.sh/gapi-script@1.2.0"
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-DUABHUA_.js"></script>
+  <script type="module" crossorigin src="/assets/index-DjgpQSMX.js"></script>
 <script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
 <body class="bg-background text-foreground">
   <div id="root"></div>
